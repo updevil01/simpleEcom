@@ -1,0 +1,121 @@
+/* Styles for the main container */
+.container {
+  display: flex; /* ใช้ Flexbox สำหรับจัดเรียง */
+  max-width: 900px; /* กำหนดความกว้างของ container */
+  margin: 20px auto; /* ให้อยู่กลาง */
+  justify-content: space-between; /* จัดให้สองฝั่งอยู่ชิดสุดขอบ */
+  align-items: flex-start; /* จัดการเรียงแนวตั้ง */
+}
+
+/* Styles for the form section */
+.form-container {
+  width: 250px; /* ขนาดของกรอบฟอร์ม */
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+}
+
+/* Styles for the heading */
+h1 {
+  text-align: center;
+  color: #333;
+  font-size: 1.5em;
+  margin-bottom: 15px;
+}
+
+/* Styles for input fields */
+input[type="text"],
+input[type="number"],
+textarea {
+  width: 95%;
+  padding: 8px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+/* Styles for the button */
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Styles for the product list section */
+.products-grid {
+  width: 60%; /* ขนาดของกรอบรายการสินค้า */
+  padding-left: 20px; /* ระยะห่างระหว่างฟอร์มและรายการสินค้า */
+  display: grid; /* ใช้ Grid สำหรับจัดเรียง */
+  gap: 10px; /* เพิ่มระยะห่างระหว่างการ์ดสินค้า */
+  grid-template-columns: repeat(2, 1fr); /* แสดง 2 คอลัมน์ */
+}
+
+/* Styles for the product cards */
+.card {
+  border: 1px solid #ddd; /* กรอบของการ์ดสินค้า */
+  margin: 10px 0; /* ระยะห่างระหว่างการ์ด */
+  padding: 15px; /* ช่องว่างภายในการ์ด */
+  border-radius: 4px; /* มุมของการ์ด */
+  background-color: #fff; /* สีพื้นหลังของการ์ด */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* เงาของการ์ด */
+}
+
+/* Styles for the product card title */
+.card h2 {
+  margin: 0;
+  color: #007bff;
+  font-size: 1.2em;
+}
+
+/* Styles for pagination */
+.pagination {
+  margin-top: 20px; /* ระยะห่างจากรายการสินค้า */
+  display: flex;
+  justify-content: center; /* จัดให้อยู่กลาง */
+  align-items: center;
+  width: 100%; /* ครอบคลุมความกว้างทั้งหมด */
+  white-space: nowrap; /* ป้องกันการขึ้นบรรทัดใหม่ */
+}
+.pagination-text {
+  margin-right: 20px; /* ระยะห่างระหว่างข้อความกับปุ่ม */
+  font-size: 16px; /* ขนาดของข้อความ */
+  color: #333; /* สีของข้อความ */
+}
+
+/* Styles for pagination buttons */
+.pagination button {
+  margin: 0 5px; /* ระยะห่างระหว่างปุ่ม */
+  padding: 10px 20px; /* ขนาดของปุ่ม */
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px; /* ขนาดของปุ่ม */
+}
+
+.pagination button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+/* Styles for the product images */
+.product-image {
+  width: 100%; /* ทำให้ภาพมีความกว้างเต็มกรอบ */
+  height: auto; /* ทำให้ความสูงของภาพปรับตามสัดส่วน */
+  max-height: 200px; /* กำหนดความสูงสูงสุดของภาพ */
+  object-fit: cover; /* ทำให้ภาพไม่เสียสัดส่วน */
+  border-radius: 4px; /* เพิ่มมุมมนให้กับภาพ */
+}
